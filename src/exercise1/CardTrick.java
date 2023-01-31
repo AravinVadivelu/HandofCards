@@ -73,7 +73,8 @@ if (found) {
     /**
      * A simple method to print out personal information. Follow the instructions to 
      * replace this information with your own.
-     * @author Paul Bonenfant Jan 2022
+     * @author Aravin Vadivelu
+     * im done!
      */
     private static void printInfo() {
     
