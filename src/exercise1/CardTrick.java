@@ -80,7 +80,7 @@ if (found) {
         System.out.println("Congratulations, you guessed right!");
         System.out.println();
         
-        System.out.println("My name is Aravin Vadivelu, but you can call me Aravin");
+        System.out.println("My name is Aravin Vadivelu, you can call me Aravin");
         System.out.println();
         
         System.out.println("My career ambitions:");
