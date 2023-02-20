@@ -21,7 +21,7 @@ public class CardTrick {
 
         for (int i = 0; i < hand.length; i++) {
             Card card = new Card();
-            card.setValue(random.nextInt(13) + 1);
+            card.setValue(random.value(13) + 1);
             card.setSuit(Card.SUITS[random.nextInt(4)]);
             hand[i] = card;
         }
