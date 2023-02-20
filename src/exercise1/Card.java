@@ -1,46 +1,40 @@
-package exercise1;
+package cardgametuepm;
 
 /**
- * A class that models playing card Objects. Cards have 
- * a value (note that Ace = 1, Jack = 11, Queen = 12, King = 13)
- * A suit (clubs, hearts, spades, diamonds).
- * There are 52 cards in a deck, no jokers.
- * This code is to be used in ICE1. When you create your own branch,
- * add your name as a modifier.
- * @author dancye
- * @author Paul Bonenfant May 2020
+ *
+ * @author User
  */
-public class Card {
+    public class Card {
+        public enum Suit {
+            HEARTS, CLUBS, SPADES, DIAMONDS
+        }
+        public enum Value {
+            ACE, TWO, THREE ,FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, TEN, JACK, QUEEN, KING
+        }
+        private Value value;
+        private Suit suit;
 
-   private String suit; //clubs, spades, diamonds, hearts
-   private int value;//1-13
+        public Value getValue(){
+            this.value = value;
+            this.suit = suit;
+        }
+        public void setValue(Value value){
+            return this.value;
+        }
 
-   public static final String [] SUITS = {"Hearts", "Diamonds", "Spades", "Clubs"};
+        public Suit getSuit() {
+            return suit;
+        }
+
+        public void setSuit(Suit suit) {
+            this.suit = suit;
+        }
+    
     /**
-     * @return the suit
+     * @param args the command line arguments
      */
-    public String getSuit() {
-        return suit;
+    public static void main(String[] args) {
+        // TODO code application logic here
     }
-
-    /**
-     * @param suit the suit to set
-     */
-    public void setSuit(String suit) {
-        this.suit = suit;
-    }
-
-    /**
-     * @return the value
-     */
-    public int getValue() {
-        return value;
-    }
-
-    /**
-     * @param value the value to set
-     */
-    public void setValue(int value) {
-        this.value = value;
-    }  
+    
 }
